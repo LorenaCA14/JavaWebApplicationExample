@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 @WebServlet(urlPatterns = "/myServlet2")
 public class MyServlet2 extends HttpServlet {
 
@@ -21,7 +22,7 @@ public class MyServlet2 extends HttpServlet {
 		out.println("<html>");
 		out.println("<head><title>Ejemplo HTML desde Servlet</title></head>");
 		out.println("<body>");
-		out.println("<h1>Bienvenido!!</h1>");
+		out.println("<h1>Bienvenido/a " + request.getParameter("nombre" ) + "!!</h1>");
 	}
 
 }
