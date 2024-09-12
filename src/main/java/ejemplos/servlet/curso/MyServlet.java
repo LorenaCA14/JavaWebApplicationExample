@@ -32,6 +32,7 @@ public class MyServlet extends HttpServlet {
 		out.println("<input type=\"submit\" value=\"Submit\"><br>");
 		out.println("</form>");
 		out.println("</body></html>");
+
 	}
 
 }
